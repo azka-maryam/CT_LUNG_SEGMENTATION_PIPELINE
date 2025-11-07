@@ -29,22 +29,9 @@ The project illustrates the reproducible workflow of a real-world medical imagin
 CT_LUNG_SEGMENTATION_PIPELINE/
 │
 ├── 01_Notebooks/
-│ ├── 01_Batch_Preprocessing.ipynb
-│ ├── 02_Compare_Statistics.ipynb
-│ └── 03_Segmentation_Notes.ipynb
-│
 ├── 02_CSV_results/
-│ ├── raw_data_stats.csv
-│ └── preprocessed_data_stats.csv
-│
 ├── 03_Images/
-│ ├── lung_threshold_segmentation.png
-│ ├── manual_refinement.png
-│ └── final_segmentation.png
-│
 ├── 04_Flowchart.png
-│
-└── README.md
 
 yaml
 Copy code
