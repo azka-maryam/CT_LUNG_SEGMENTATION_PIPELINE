@@ -33,8 +33,6 @@ CT_LUNG_SEGMENTATION_PIPELINE/
 ├── 03_Images/
 ├── 04_Flowchart.png
 
-yaml
-Copy code
 
 ---
 
