@@ -97,29 +97,30 @@ This project highlights **reproducible medical imaging steps**, meaning all prep
 
 ---
 
-📊 Key Notes
-Lungs (left and right together) were segmented as a single region.
+📊 **Key Notes**
 
-Air in trachea and outside body was manually erased.
+- Lungs (left and right together) were segmented as a single region.  
+- Air in trachea and outside the body was manually erased.  
+- Missed regions inside lungs were corrected using **Level Tracing**.  
+- Some lung holes remained to preserve internal structures.  
+- No quantitative volume or density measurements were performed.  
+- This workflow emphasizes clarity, reproducibility, and realism in handling chest CT segmentation.  
 
-Missed regions inside lungs were corrected using Level Tracing.
+---
 
-Some lung holes remained to preserve inner structures.
+🧾 **Summary**
 
-No quantitative volume or density measurements were performed.
+| Step | Description |
+|------|--------------|
+| **Preprocessing** | AI-assisted Python pipeline for normalization & resampling |
+| **Segmentation** | Manual refinement using 3D Slicer (Thresholding → Paint/Eraser → Level Tracing → Smoothing) |
+| **Comparison** | NumPy-based statistical validation |
+| **Visualization** | Screenshots saved in `/03_Images/` |
+| **Flowchart** | Included as `/04_Flowchart.png` and Mermaid code |
 
-This workflow emphasizes clarity, reproducibility, and realism in handling chest CT segmentation.
+---
 
-🧾 Summary
-Step	Description
-Preprocessing	AI-assisted Python pipeline for normalization & resampling
-Segmentation	Manual refinement using 3D Slicer
-Comparison	NumPy-based statistical validation
-Visualization	Screenshots saved in /03_Images/
-Flowchart	Included as /04_Flowchart.png and Mermaid code
+👩‍💻 **Author:** Azka Maryam  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/azka-maryam-55582b26a)  
 
-👩‍💻 Author
-Azka Maryam
-LinkedIn [www.linkedin.com/in/azka-maryam-55582b26a]
-Part of Medical Imaging & AI Workflow Portfolio Projects
-
+*Part of Medical Imaging & AI Workflow Portfolio Projects.*
