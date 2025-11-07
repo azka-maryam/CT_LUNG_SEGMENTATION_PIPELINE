@@ -97,29 +97,6 @@ This project highlights **reproducible medical imaging steps**, meaning all prep
 
 ---
 
-## 🗺️ Flowchart
-
-Below is the simplified workflow of the complete pipeline:
-
-```mermaid
-flowchart LR
-    A["📂 Import CT Chest Scans<br/>(DICOM or NIfTI)"] --> B["🤖 Batch Preprocessing<br/>(Resample + Normalize using SimpleITK)"]
-    B --> C["📊 Compute Statistics<br/>with NumPy & pandas"]
-    C --> D["💾 Save Preprocessed Files<br/>and CSV Summaries"]
-    D --> E["🧠 Open in 3D Slicer<br/>(CT Lung Window)"]
-    E --> F["🫁 Threshold Segmentation<br/>for Lung Air Regions"]
-    F --> G["🖌️ Manual Refinement<br/>(Erase + Level Tracing + Smoothing)"]
-    G --> H["💾 Export Final Lung Mask<br/>(NRRD / SEG Format)"]
-
-    %% Styling
-    style A fill:#B3E5FC,stroke:#0277BD,stroke-width:1.5px,rx:10,ry:10
-    style B fill:#C8E6C9,stroke:#2E7D32,stroke-width:1.5px,rx:10,ry:10
-    style C fill:#FFF9C4,stroke:#F9A825,stroke-width:1.5px,rx:10,ry:10
-    style D fill:#FFECB3,stroke:#FF8F00,stroke-width:1.5px,rx:10,ry:10
-    style E fill:#FFE0B2,stroke:#F57C00,stroke-width:1.5px,rx:10,ry:10
-    style F fill:#F8BBD0,stroke:#AD1457,stroke-width:1.5px,rx:10,ry:10
-    style G fill:#E1BEE7,stroke:#7B1FA2,stroke-width:1.5px,rx:10,ry:10
-    style H fill:#C5CAE9,stroke:#303F9F,stroke-width:1.5px,rx:10,ry:10
 📊 Key Notes
 Lungs (left and right together) were segmented as a single region.
 
